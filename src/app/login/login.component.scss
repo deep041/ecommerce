@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+.login {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    // background-color: #353434;
+    background-image: url('../../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login .header {
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+
+.login .header .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.login .logo-text {
+    font-family: 'Rubik Vinyl', cursive;
+    color: #FFF;
+}
+
+.login .form h3 {
+    color: #FFF;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login .form .text {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.login .login-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login .login-form input {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 5px 7px;
+    border-radius: 5px;
+    text-align: center;
+    width: 8%;
+    color: #FFF;
+}
+
+.login .login-form-otp {
+    display: flex;
+}
+
+.login .login-form-otp input {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 5px 7px;
+    border-radius: 5px;
+    text-align: center;
+    width: 8%;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.login .form .button-area {
+    // text-align: center;
+}
+
+.login .form .button-area .button {
+    background-color: chartreuse;
+    color: #FFF;
+    width: 150px;
+    margin: 20px 0px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    text-align: center;
+}

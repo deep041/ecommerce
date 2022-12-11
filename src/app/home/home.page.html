@@ -1,20 +1,121 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="home">
+    <div class="header">
+        <h3> 
+            Select {{ selectType === 1 ? 'shirt' : 'pant' }} color 
+        </h3>
+    </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="colors" *ngIf="selectType === 1">
+        <div class="color-row">
+            <div class="color color1" (click)="onSelect({ color: 'color1', code: '02642A' })" [ngClass]="{selected: selected === 'color1'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color2" (click)="onSelect({ color: 'color2', code: 'B51717' })" [ngClass]="{selected: selected === 'color2'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+        <div class="color-row">
+            <div class="color color3" (click)="onSelect({ color: 'color3', code: '60371F'})" [ngClass]="{selected: selected === 'color3'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color4" (click)="onSelect({ color: 'color4', code: '5E3A8C'})" [ngClass]="{selected: selected === 'color4'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color5" (click)="onSelect({ color: 'color5', code: 'FF7700'})" [ngClass]="{selected: selected === 'color5'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color6" (click)="onSelect({ color: 'color6', code: '20419A'})" [ngClass]="{selected: selected === 'color6'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color7" (click)="onSelect({ color: 'color7', code: 'FFFFFF'})" [ngClass]="{selected: selected === 'color7'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color8" (click)="onSelect({ color: 'color8', code: '1F2331'})" [ngClass]="{selected: selected === 'color8'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color9" (click)="onSelect({ color: 'color9', code: '046489'})" [ngClass]="{selected: selected === 'color9'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color10" (click)="onSelect({ color: 'color10', code: '0CA2BD'})" [ngClass]="{selected: selected === 'color10'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color11" (click)="onSelect({ color: 'color11', code: '353F4B'})" [ngClass]="{selected: selected === 'color11'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color12" (click)="onSelect({ color: 'color12', code: 'F6E44A'})" [ngClass]="{selected: selected === 'color12'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="colors" *ngIf="selectType === 2">
+        <div class="color-row">
+            <div class="color color13" (click)="onSelect({ color: 'color13', code: '445A67'})" [ngClass]="{selected: selected === 'color13'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color14" (click)="onSelect({ color: 'color14', code: '57838D'})" [ngClass]="{selected: selected === 'color14'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color15" (click)="onSelect({ color: 'color15', code: 'B4C9C7'})" [ngClass]="{selected: selected === 'color15'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color16" (click)="onSelect({ color: 'color16', code: 'F3BFB3'})" [ngClass]="{selected: selected === 'color16'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color17" (click)="onSelect({ color: 'color17', code: 'CCADB2'})" [ngClass]="{selected: selected === 'color17'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color18" (click)="onSelect({ color: 'color18', code: 'FFEFFF'})" [ngClass]="{selected: selected === 'color18'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color19" (click)="onSelect({ color: 'color19', code: 'A7D9C9'})" [ngClass]="{selected: selected === 'color19'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color20" (click)="onSelect({ color: 'color20', code: '50B4D8'})" [ngClass]="{selected: selected === 'color20'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color21" (click)="onSelect({ color: 'color21', code: '9EDDEF'})" [ngClass]="{selected: selected === 'color21'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color22" (click)="onSelect({ color: 'color22', code: 'F7E5B7'})" [ngClass]="{selected: selected === 'color22'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <div class="color-row">
+            <div class="color color23" (click)="onSelect({ color: 'color23', code: '96B3C2'})" [ngClass]="{selected: selected === 'color23'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+            <div class="color color24" (click)="onSelect({ color: 'color24', code: '2E3332'})" [ngClass]="{selected: selected === 'color24'}">
+                <i class="icon fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-button" (click)="selectColor()"><i class="fa-solid fa-circle-arrow-right"></i></div>
+</div>

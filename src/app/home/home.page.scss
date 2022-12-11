@@ -1,27 +1,157 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.home {
+    min-height: 100vh;
+    background-color: #212121;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.home .next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 7px 10px;
+    color: #046489;
+    border-radius: 5px;
+    font-size: 50px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.home .header h3 {
+    color: #FFF;
+    font-weight: bold;
 }
 
-#container a {
-  text-decoration: none;
+.home .colors {
+    margin-top: 25px;
+}
+
+.home .colors .color-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.home .colors .color {
+    width: 45%;
+    height: 100px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.color .icon {
+    display: none;
+}
+
+.color.selected {
+    border: 3px solid green !important;
+    position: relative;
+}
+
+.color.selected .icon {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 25px;
+    color: green;
+}
+
+// Shirt Colors
+.color1 {
+    background-color: #02642A;
+}
+
+.color2 {
+    background-color: #B51717;
+}
+
+.color3 {
+    background-color: #60371F;
+}
+
+.color4 {
+    background-color: #5E3A8C;
+}
+
+.color5 {
+    background-color: #FF7700;
+}
+
+.color6 {
+    background-color: #20419A;
+}
+
+.color7 {
+    background-color: #FFFFFF;
+}
+
+.color8 {
+    background-color: #1F2331;
+}
+
+.color9 {
+    background-color: #046489;
+}
+
+.color10 {
+    background-color: #0CA2BD;
+}
+
+.color11 {
+    background-color: #353F4B;
+}
+
+.color12 {
+    background-color: #F6E44A;
+}
+
+// Pant colors
+.color13 {
+    background-color: #445A67;
+}
+
+.color14 {
+    background-color: #57838D;
+}
+
+.color15 {
+    background-color: #B4C9C7;
+}
+
+.color16 {
+    background-color: #F3BFB3;
+}
+
+.color17 {
+    background-color: #CCADB2;
+}
+
+.color18 {
+    background-color: #FFEFFF;
+}
+
+.color19 {
+    background-color: #A7D9C9;
+}
+
+.color20 {
+    background-color: #50B4D8;
+}
+
+.color21 {
+    background-color: #9EDDEF;
+}
+
+.color22 {
+    background-color: #F7E5B7;
+}
+
+.color23 {
+    background-color: #96B3C2;
+}
+
+.color24 {
+    background-color: #2E3332;
 }

@@ -1,0 +1,42 @@
+<div class="login">
+
+    <div class="header">
+        <div class="center">
+            <div class="logo">
+                <img src="assets/logo.png">
+            </div>
+            <div class="logo-text">
+                <h2>E Commerce</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form">
+        <h3>Login</h3>
+        <p class="text"> Enter your {{ step === 1 ? 'mobile number' : 'OTP' }}</p>
+        <div class="login-form" *ngIf="step === 1">
+            <input type="tel" id="num1" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num2').focus()" />
+            <input type="tel" id="num2" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num3').focus()" />
+            <input type="tel" id="num3" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num4').focus()" />
+            <input type="tel" id="num4" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num5').focus()" />
+            <input type="tel" id="num5" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num6').focus()" />
+            <input type="tel" id="num6" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num7').focus()" />
+            <input type="tel" id="num7" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num8').focus()" />
+            <input type="tel" id="num8" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num9').focus()" />
+            <input type="tel" id="num9" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num10').focus()" />
+            <input type="tel" id="num10" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+
+        <div class="login-form-otp" *ngIf="step === 2">
+            <input type="tel" id="num11" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num12').focus()" />
+            <input type="tel" id="num12" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num13').focus()" />
+            <input type="tel" id="num13" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,''); document.getElementById('num14').focus()" />
+            <input type="tel" id="num14" maxlength="1" tabindex="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+
+        <div class="button-area">
+            <div class="button" (click)="login()">{{ step === 1 ? 'Continue' : 'Login' }}</div>
+        </div>
+    </div>
+</div>
