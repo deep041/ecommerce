@@ -1,21 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "../../theme/local_variables.scss";
 
 .login {
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
     height: 100vh;
-    // background-color: #353434;
-    background-image: url('../../assets/background.jpg');
+    background-color: $background-color;
+    // background-image: url('../../assets/background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.login .background-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.login .background-circle.circle1 {
+    background-color: $thirdly;
+    top: -7%;
+    left: -15%;
+}
+
+.login .background-circle.circle2 {
+    background-color: $forth;
+    top: 36%;
+    right: -72px;
+}
+
 .login .header {
-    height: 50vh;
+    height: 40vh;
     text-align: center;
     position: relative;
+    background-color: $primary;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .login .header .center {
@@ -30,13 +50,45 @@
     height: 80px;
 }
 
+.login .logo {
+    text-align: center;
+    font-size: 45px;
+    color: $white-color;
+    animation: logo 1.5s;
+
+    border: 1px solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.login .logo svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .login .logo-text {
-    font-family: 'Rubik Vinyl', cursive;
-    color: #FFF;
+    font-family: 'Pacifico', cursive;
+    color: $white-color;
+}
+
+.login .logo-text h2 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login .form {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .login .form h3 {
-    color: #FFF;
+    color: $primary;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -48,7 +100,7 @@
 
 .login .login-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .login .login-form input {
@@ -57,8 +109,9 @@
     padding: 5px 7px;
     border-radius: 5px;
     text-align: center;
-    width: 8%;
-    color: #FFF;
+    width: 9%;
+    color: $text-color;
+    background-color: $light-grey;
 }
 
 .login .login-form-otp {
@@ -71,9 +124,10 @@
     padding: 5px 7px;
     border-radius: 5px;
     text-align: center;
-    width: 8%;
-    color: #FFF;
+    width: 9%;
+    color: $text-color;
     margin-right: 10px;
+    background-color: $light-grey;
 }
 
 .login .form .button-area {
@@ -81,11 +135,33 @@
 }
 
 .login .form .button-area .button {
-    background-color: chartreuse;
+    background-color: $secondary;
     color: #FFF;
     width: 150px;
     margin: 20px 0px;
     padding: 10px 14px;
     border-radius: 5px;
     text-align: center;
+}
+
+.login .footer-text {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 10px;
+    font-size: 12px;
+    color: $grey-color;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
