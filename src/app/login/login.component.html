@@ -1,9 +1,13 @@
 <div class="login">
 
+    <!-- <div class="background-circle circle1"></div> -->
+    <!-- <div class="background-circle circle2"></div> -->
+
     <div class="header">
         <div class="center">
             <div class="logo">
-                <img src="assets/logo.png">
+                <!-- <img src="assets/logo.png"> -->
+                <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <div class="logo-text">
                 <h2>E Commerce</h2>
@@ -38,5 +42,9 @@
         <div class="button-area">
             <div class="button" (click)="login()">{{ step === 1 ? 'Continue' : 'Login' }}</div>
         </div>
+    </div>
+
+    <div class="footer-text">
+        By clicking continue you are accepting Terms & Conditions.
     </div>
 </div>
