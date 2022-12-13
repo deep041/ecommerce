@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductComponent } from './product/product.component';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './modules/login/login.component';
+import { CommonService } from './services/common.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { LoginComponent } from './modules/login/login.component';
         AppRoutingModule,
         CommonModule
     ],
-    providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+    providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, CommonService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }

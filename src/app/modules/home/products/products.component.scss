@@ -1,0 +1,25 @@
+@import "../../../../theme/local_variables.scss";
+
+.products {
+    min-height: 100vh;
+    background-color: $background-color;
+    padding: 10px;
+}
+
+.products .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: $primary;
+}
+
+.products .product {
+    margin-top: 10px;
+}
+
+.products .product .list {
+    // border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

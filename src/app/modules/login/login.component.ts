@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
     selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
 
     step: number = 1;
 
-    constructor(private router: Router) { }
+    constructor(private router: Router, public commonService: CommonService) { }
 
     ngOnInit() { }
 
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
         if (this.step === 1) {
             this.step = 2;
         } else if (this.step === 2) {
-            this.router.navigate(['/home/categories']);
+            this.router.navigate(['/home']);
         }
     }
 
