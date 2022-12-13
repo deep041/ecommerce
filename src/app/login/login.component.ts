@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
         if (this.step === 1) {
             this.step = 2;
         } else if (this.step === 2) {
-            this.router.navigate(['/home']);
+            this.router.navigate(['/home/categories']);
         }
     }
 
