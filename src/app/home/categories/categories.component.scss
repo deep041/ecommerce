@@ -1,7 +1,64 @@
 @import "../../../theme/local_variables.scss";
 
-.category {
+.categories {
     width: 100%;
-    min-height: 100vh;
     background-color: $background-color;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.categories .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: $primary;
+}
+
+.categories .category {
+    margin-top: 10px;
+}
+
+.categories .category .list {
+    // border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.categories .category .list .image {
+    min-width: 65px;
+    min-height: 65px;
+    vertical-align: -webkit-baseline-middle;
+    border-radius: 5px;
+}
+
+.image-1 {
+    background-color: $thirdly;
+    background-image: url('../../../assets/shirts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    background-color: $forth;
+    background-image: url('../../../assets/pant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-3 {
+    background-color: $secondary;
+    background-image: url('../../../assets/others.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.categories .category .list .title {
+    vertical-align: -webkit-baseline-middle;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-left: 10px;
 }

@@ -1,6 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import "../../../theme/local_variables.scss";
 
 .header {
     background-color: $background-color;
     display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header .logo .icon {
+    font-size: 25px;
+    display: inline-block;
+    color: $primary;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: unset;
+    font-family: 'Pacifico', cursive;
+    color: $primary;
+}
+
+.header .right {
+    text-align: right;
+}
+
+.header .right .text {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.header .right .text span {
+    font-weight: bold;
+    color: $secondary;
+}
+
+.header .right .user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: $thirdly;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    background-image: url('../../../assets/user.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
