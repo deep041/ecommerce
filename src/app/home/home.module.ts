@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { CategoriesComponent } from './categories/categories.component';
-import { HeaderComponent } from './header/header.component';
+import { CategoriesComponent } from '../modules/home/categories/categories.component';
+import { HeaderComponent } from '../modules/home/header/header.component';
 
 @NgModule({
     imports: [

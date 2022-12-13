@@ -1,4 +1,4 @@
-@import "../../../theme/local_variables.scss";
+@import "../../../../theme/local_variables.scss";
 
 .categories {
     width: 100%;
@@ -34,7 +34,7 @@
 
 .image-1 {
     background-color: $thirdly;
-    background-image: url('../../../assets/shirts.jpg');
+    background-image: url('../../../../assets/shirts.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 
 .image-2 {
     background-color: $forth;
-    background-image: url('../../../assets/pant.jpg');
+    background-image: url('../../../../assets/pant.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 
 .image-3 {
     background-color: $secondary;
-    background-image: url('../../../assets/others.jpeg');
+    background-image: url('../../../../assets/others.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

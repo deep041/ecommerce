@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import "../../../theme/local_variables.scss";
+@import "../../../../theme/local_variables.scss";
 
 .header {
     background-color: $background-color;
@@ -46,7 +46,7 @@
     border-radius: 50%;
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
-    background-image: url('../../../assets/user.jpg');
+    background-image: url('../../../../assets/user.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
